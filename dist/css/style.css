@@ -640,10 +640,6 @@ select {
   margin-left: auto;
   margin-right: auto;
 }
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -679,6 +675,9 @@ select {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -811,6 +810,10 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-pink-400 {
+  --tw-text-opacity: 1;
+  color: rgb(244 114 182 / var(--tw-text-opacity));
 }
 .placeholder-gray-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
@@ -1059,6 +1062,11 @@ pre[class*=language-]::selection {
   color: rgb(110 231 183 / var(--tw-text-opacity));
 }
 
+.hover\:text-pink-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(249 168 212 / var(--tw-text-opacity));
+}
+
 .focus\:border-indigo-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(99 102 241 / var(--tw-border-opacity));
@@ -1103,11 +1111,6 @@ pre[class*=language-]::selection {
 }
 
 @media (min-width: 768px) {
-
-  .md\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
 
   .md\:px-0 {
     padding-left: 0px;
